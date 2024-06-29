@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#results-card {
+  display: flex;
+  box-shadow: 10px 5px 20px lightgray;
+  border-radius: 10%;
+  min-height: 450px;
+}
+
+#your-result-part {
+  border-radius: 10%;
+  background: linear-gradient(225deg, blue, Purple);
+  color: white;
+}
+
+#your-result-part,
+#summary-container {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#your-result-header {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+#number-result {
+  padding: 30px;
+  font-size: 75px;
+}
+
+#number-result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(
+      rgba(0, 0, 255, 0.5),
+      /* Blue with 70% opacity */ rgba(128, 0, 128, 0.5)
+    )
+    /* Purple with 30% opacity */;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 50px;
+  font-weight: 900;
+}
+
+#out-of-result {
+  position: absolute;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+#your-result-part h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#summary-container div {
+  background-color: pink;
+  padding: 18px;
+  margin-bottom: 13px;
+  width: 90%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#summary-container #reaction {
+  background-color: #f3cbcb;
+  opacity: 0.8;
+}
+
+#summary-container #memory {
+  background-color: #efef89;
+  opacity: 0.8;
+}
+
+#summary-container #verbal {
+  background-color: #b2ece5;
+  opacity: 0.8;
+}
+
+#summary-container #visual {
+  background-color: #92b4d9;
+  opacity: 0.8;
+}
+
+#summary-container {
+  position: relative;
+}
+
+#summary-container h1 {
+  position: relative;
+  top: -27px;
+  right: 72px;
+  font-size: 25px;
+  margin-top: -20px;
+}
+
+#summary-container button {
+  width: 90%;
+  padding: 17px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  background: #364556;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+#out-of-result {
+  color: lightgray;
+}
+
+#score-summary {
+  margin-bottom: 40px;
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#logo1 {
+  margin-right: -80px;
+}
+
+#logo3 {
+  margin-right: -90px;
+}
+
+@media only screen and (max-width: 670px) {
+  #results-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 20px lightgray;
+    min-height: 450px;
+    width: 100%;
+    align-items: center;
+    margin-top: 70px;
+    border-radius: 0;
+  }
+
+  #your-result-part,
+  #summary-container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+  }
+
+  #your-result-part {
+    margin-top: -90px;
+  }
+
+  #your-result-part h1 {
+    position: relative;
+    top: 35px;
+    font-size: 18px;
+    color: lightgray;
+  }
+
+  #summary-container {
+    margin-top: 20px;
+    border-radius: 0;
+  }
+
+  #summary-container h1 {
+    position: relative;
+    top: -20px;
+    right: 155px;
+    font-size: 20px;
+  }
+}
